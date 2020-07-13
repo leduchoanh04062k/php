@@ -1,0 +1,26 @@
+input.star { display: none; }
+ 
+label.star {
+text-align: center;
+  font-size: 20px;
+  color: #444;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+ 
+}
+ 
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 5px #952;
+}
+ 
+input.star-1:checked ~ label.star:before { color: #F62; }
+ 
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
